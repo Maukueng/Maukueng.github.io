@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://maukueng.github.io/</loc>
-    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
+    <lastmod>2023-06-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -11,8 +11,24 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/"
+                />
+  </url><url>
+    <loc>https://maukueng.github.io/posts/hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2023-06-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://maukueng.github.io/posts/</loc>
+    <lastmod>2023-06-11T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://maukueng.github.io/it/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="cn"
+                href="https://maukueng.github.io/posts/"
                 />
   </url><url>
     <loc>https://maukueng.github.io/posts/markdown-syntax/</loc>
@@ -24,21 +40,8 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/posts/markdown-syntax/"
-                />
-  </url><url>
-    <loc>https://maukueng.github.io/posts/</loc>
-    <lastmod>2023-02-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://maukueng.github.io/it/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-gb"
-                href="https://maukueng.github.io/posts/"
                 />
   </url><url>
     <loc>https://maukueng.github.io/pages/about/</loc>
@@ -49,7 +52,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/pages/about/"
                 />
   </url><url>
@@ -61,7 +64,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/categories/"
                 />
   </url><url>
@@ -73,7 +76,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/pages/"
                 />
   </url><url>
@@ -85,7 +88,7 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-gb"
+                hreflang="cn"
                 href="https://maukueng.github.io/tags/"
                 />
   </url>
