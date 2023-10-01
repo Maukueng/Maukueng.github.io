@@ -27,6 +27,25 @@ chocolatey安装过程：
     </item>
     
     <item>
+      <title>hugo快速搭建个人网站</title>
+      <link>https://maukueng.github.io/posts/mysql%E7%9F%A5%E8%AF%86%E7%82%B9/</link>
+      <pubDate>Sun, 11 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://maukueng.github.io/posts/mysql%E7%9F%A5%E8%AF%86%E7%82%B9/</guid>
+      
+      <description>hugo快速搭建个人网站 hugo安装 我是使用chocolatey安装的hugo，所以先安装chocolatey。
+chocolatey安装过程：
+可以去官网上进行安装Chocolatey Software | Chocolatey - The package manager for Windows 安装完成后在命令行输入choco --version如果显示版本号则安装成功 使用chocolatey安装hugo：
+建议安装扩展版本，因为一些主题需要扩展版本，安装hugo扩展版本，在命令行输入choco install hugo-extended -confirm，如果不想安装扩展版本则输入choco install hugo -confirm 安装完成后输入hugo version，如果出现版本号则安装成功，否则可以检查一下环境配置 创建站点 创建博客站点：
+在命令行切换路径到你希望存放博客文件的地方，输入hugo new site myblog创建站点，这里会生成一个myblog文件夹，这个文件夹就是博客网站的根目录。 下载Hugo主题：
+可以在hugo主题官网选择喜欢的主题进行下载，https://themes.gohugo.io/themes 下载完成之后的主题文件放到根目录即myblog目录下的themes文件夹里 运行博客网站
+将themes/你下载的主题文件/exampleSite文件夹里的内容全部复制粘贴到根目录即mylog下 博客的内容在根目录的content文件夹里，可以自由增删或者修改 根目录下命令行输入hugo server启动hogo服务，在浏览器输入http://localhost:1313/就可以进行博客效果预览。 部署到github上 创建github page：
+在github上创建仓库，仓库名必须是{用户名/github.io} 生成html并部署到github上：
+在根目录下执行hugo会在根目录生成一个public文件夹，里面放的就是需要推送到远程仓库的文件 打开git bash，切换到public目录，然后将该目录推送到之前创建的仓库，等待仓库建立网站 https://用户名.github.io/就是网站地址 </description>
+      
+    </item>
+    
+    <item>
       <title>Markdown Syntax Guide</title>
       <link>https://maukueng.github.io/posts/markdown-syntax/</link>
       <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
