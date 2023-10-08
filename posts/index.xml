@@ -6,11 +6,28 @@
     <description>Recent content in Posts on Maukueng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Sun, 11 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maukueng.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maukueng.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据结构和算法-前缀树</title>
+      <link>https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%89%8D%E7%BC%80%E6%A0%91/</link>
+      <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%89%8D%E7%BC%80%E6%A0%91/</guid>
+      
+      <description>前缀树（字典树） 什么是前缀树 前缀树是N叉树的一种特殊形式。通常来说，一个前缀树是用来存储字符串的。前缀树的每一个节点代表一个字符串（前缀）。每一个节点会有多个子节点，通往不同子节点的路径上有着不同的字符。子节点代表的字符串是由节点本身的原始字符串，以及通往该子节点路径上所有的字符组成的。
+前缀树的优点概括起来就是：一次建树，永久使用
+前缀树插入和查询的时间复杂度都是O(n)，n是对应单词的长度
+下面是前缀树的一个例子：
+​	由am,bad,be,so构成的前缀树
+前缀树的创建 前缀树类的创建模板如下：
+class Trie {private:bool isEnd;Trie* next[26];public://构造函数Trie() {isEnd = false;for (int i = 0; i &amp;lt; 26; ++i) {next[i] = nullptr;}}//插入函数void insert(string word) {Trie* node = this;for (char c : word) {if (node-&amp;gt;next[c - &amp;#39;a&amp;#39;] == nullptr) {node-&amp;gt;next[c - &amp;#39;a&amp;#39;] = new Trie();}node = node-&amp;gt;next[c - &amp;#39;a&amp;#39;];}node-&amp;gt;isEnd = true;}//搜索函数bool search(string word) {Trie* node = this;for (char c : word) {if (node-&amp;gt;next[c - &amp;#39;a&amp;#39;] == nullptr) {return false;}node = node-&amp;gt;next[c - &amp;#39;a&amp;#39;];}return node-&amp;gt;isEnd;}//前缀匹配函数，如果之前已经插入的字符串 word 的前缀之一为 prefix ，返回 true ；否则，返回 false bool startsWith(string prefix) {Trie* node = this;for (char c : prefix) {if (node-&amp;gt;next[c - &amp;#39;a&amp;#39;] == nullptr) {return false;}node = node-&amp;gt;next[c - &amp;#39;a&amp;#39;];}return true;}}; 前缀树的应用 208.</description>
+      
+    </item>
+    
     <item>
       <title>hugo快速搭建个人网站</title>
       <link>https://maukueng.github.io/posts/hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</link>
-      <pubDate>Sun, 11 Jun 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
       
       <guid>https://maukueng.github.io/posts/hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/</guid>
       
@@ -29,7 +46,7 @@ chocolatey安装过程：
     <item>
       <title>Markdown Syntax Guide</title>
       <link>https://maukueng.github.io/posts/markdown-syntax/</link>
-      <pubDate>Sat, 11 Feb 2023 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
       
       <guid>https://maukueng.github.io/posts/markdown-syntax/</guid>
       
