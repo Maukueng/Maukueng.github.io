@@ -6,7 +6,24 @@
     <description>Recent content in Home on Maukueng&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
-    <lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maukueng.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://maukueng.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>数据结构和算法-单调栈</title>
+      <link>https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%8D%95%E8%B0%83%E6%A0%88/</link>
+      <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%8D%95%E8%B0%83%E6%A0%88/</guid>
+      
+      <description>单调栈 单调栈的概念 单调栈就是一个栈结构，里面存放的内容从栈顶到栈底是依次递增或者递减的。它可以用来解决在一个数组中找出每个元素对应左右两部分比自己小的值并且最近的值的情况。并且保证时间复杂度在O(n)。
+单调栈的解题模板 stack&amp;lt;int&amp;gt; st; //根据需求，单调增或减//一般寻找下一个更大元素的时候从后往前遍历,且栈顶到栈底递增for (遍历数组) {while (栈非空 &amp;amp;&amp;amp; 当前元素大于等于栈顶元素) {弹出栈顶元素}if (栈非空) {栈顶元素就是下一个更大的元素}当前元素进栈} 单调栈的应用 739. 每日温度 - 力扣（LeetCode）
+给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指对于第 i 天，下一个更高温度出现在几天后。如果气温在这之后都不会升高，请在该位置用 0 来代替。
+示例 1:
+输入: temperatures = [73,74,75,71,69,72,76,73] 输出: [1,1,4,2,1,1,0,0]
+代码：
+vector&amp;lt;int&amp;gt; dailyTemperatures(vector&amp;lt;int&amp;gt;&amp;amp; temperatures) {//单调栈，栈顶到栈底递增stack&amp;lt;int&amp;gt; st; //存放下标int n = temperatures.size();//存放答案，设置初值vector&amp;lt;int&amp;gt; res(n, 0);for (int i = n - 1; i &amp;gt;= 0; --i) {//若当前温度大于等于栈顶元素，则弹出栈顶元素while (!</description>
+      
+    </item>
+    
     <item>
       <title>数据结构和算法-前缀树</title>
       <link>https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%89%8D%E7%BC%80%E6%A0%91/</link>

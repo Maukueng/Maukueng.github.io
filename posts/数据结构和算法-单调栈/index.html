@@ -1,25 +1,24 @@
-<!DOCTYPE html><html lang="cn" class="dark"><head><meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="cn"><head><meta charset="utf-8">
 <meta http-equiv="content-type" content="text/html">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title itemprop="name">Home | Maukueng&#39;s blog</title>
-<meta property="og:title" content="Home | Maukueng&#39;s blog" />
-<meta name="twitter:title" content="Home | Maukueng&#39;s blog" />
-<meta itemprop="name" content="Home | Maukueng&#39;s blog" />
-<meta name="application-name" content="Home | Maukueng&#39;s blog" />
+<title itemprop="name">数据结构和算法-单调栈 | Maukueng&#39;s blog</title>
+<meta property="og:title" content="数据结构和算法-单调栈 | Maukueng&#39;s blog" />
+<meta name="twitter:title" content="数据结构和算法-单调栈 | Maukueng&#39;s blog" />
+<meta itemprop="name" content="数据结构和算法-单调栈 | Maukueng&#39;s blog" />
+<meta name="application-name" content="数据结构和算法-单调栈 | Maukueng&#39;s blog" />
 <meta property="og:site_name" content="maoqiang&#39;s blog" />
 
-<meta name="description" content="Minimal Hugo blog theme with light and dark mode support">
-<meta itemprop="description" content="Minimal Hugo blog theme with light and dark mode support" />
-<meta property="og:description" content="Minimal Hugo blog theme with light and dark mode support" />
-<meta name="twitter:description" content="Minimal Hugo blog theme with light and dark mode support" />
+<meta name="description" content="单调栈刷题记录">
+<meta itemprop="description" content="单调栈刷题记录" />
+<meta property="og:description" content="单调栈刷题记录" />
+<meta name="twitter:description" content="单调栈刷题记录" />
 
 <meta property="og:locale" content="cn" />
 <meta name="language" content="cn" />
 
-  <link rel="alternate" hreflang="en-gb" href="https://maukueng.github.io/" title="English" />
-
-  <link rel="alternate" hreflang="it" href="https://maukueng.github.io/it/" title="Italian" />
+  <link rel="alternate" hreflang="en-gb" href="https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%8D%95%E8%B0%83%E6%A0%88/" title="English" />
 
 
 
@@ -31,14 +30,54 @@
 
 
 
+    
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2023-10-03T00:00:00Z />
+    <meta property="article:published_time" content=2023-10-03T00:00:00Z />
+
+    
+    <meta property="og:article:author" content="Linmaoqiang" />
+    <meta property="article:author" content="Linmaoqiang" />
+    <meta name="author" content="Linmaoqiang" />
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "数据结构和算法-单调栈",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2023-10-03",
+        "description": "单调栈刷题记录",
+        "wordCount":  121 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2023-10-03",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "Maukueng\u0027s blog"
+        }
+    }
+    </script>
+
 
 <meta name="generator" content="Hugo 0.119.0">
 
     
 
-    <link rel="canonical" href="https://maukueng.github.io/">
-    <link href="/index.xml" rel="alternate" type="application/rss+xml" title="Maukueng&#39;s blog">
-    <link href="/index.xml" rel="feed" type="application/rss+xml" title="Maukueng&#39;s blog">
+    <link rel="canonical" href="https://maukueng.github.io/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%8D%95%E8%B0%83%E6%A0%88/">
     <link href="/style.min.9bd04d0fad85388343088ec85e9afd787ea003e72914d7f57df39c17ab2e7173.css" rel="stylesheet">
     <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
 
@@ -63,7 +102,7 @@
 
     
     </head>
-<body data-theme="dark" class="notransition">
+<body data-theme = "dark" class="notransition">
 
 <script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
 
@@ -90,14 +129,14 @@ stroke-linejoin="round" class="feather feather-home">
                 
                 
                 <li>
-                    <a class="menu-link active" href="/">
+                    <a class="menu-link " href="/">
                         首页
                     </a>
                     
                 </li>
                 
                 <li>
-                    <a class="menu-link " href="/posts/">
+                    <a class="menu-link active" href="/posts/">
                         文章
                     </a>
                     
@@ -115,42 +154,6 @@ stroke-linejoin="round" class="feather feather-home">
                 </li>
                 
                 
-                    <li>
-                        <select class="lang-list" id="select-language" onchange="location = this.value;">
-                            
-                            
-                            
-                                
-                                
-                                    
-                                        
-                                        
-                                            <option id="en-gb" value="https://maukueng.github.io/" selected>CN
-                                            </option>
-                                        
-                                    
-                                
-                                    
-                                
-                            
-                                
-                                
-                                    
-                                
-                                    
-                                        
-                                        
-                                            <option id="it" value="https://maukueng.github.io/it/">IT</option>
-                                        
-                                    
-                                
-                            
-                        </select>                
-                    </li>
-                    <li class="menu-separator">
-                        <span>|</span>
-                    </li>
-                
             </ul>
             <a id="mode" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
@@ -161,85 +164,81 @@ stroke-linejoin="round" class="feather feather-home">
         </div>
     </nav>
 </div>
-<div class="wrapper">
-        
 
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">数据结构和算法-单调栈</h1>
+                
+                
+                <div class="post-meta">
+                    <time datetime="2023-10-03T00:00:00&#43;00:00" itemprop="datePublished"> 3 Oct 2023 </time>
+                </div>
+                
+            </header>
+                <details class="toc">
+                    <summary><b>Table of Contents</b></summary>
+                    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#单调栈的概念">单调栈的概念</a></li>
+    <li><a href="#单调栈的解题模板">单调栈的解题模板</a></li>
+    <li><a href="#单调栈的应用">单调栈的应用</a></li>
+    <li><a href="#单调栈题目">单调栈题目</a></li>
+  </ul>
+</nav>
+                </details>
+                <div class="page-content">
+                <h1 id="单调栈">单调栈</h1>
+<h2 id="单调栈的概念">单调栈的概念</h2>
+<p>单调栈就是一个栈结构，里面存放的内容<strong>从栈顶到栈底是依次递增或者递减的</strong>。它可以用来解决在一个数组中找出每个元素对应左右两部分比自己小的值并且最近的值的情况。并且保证时间复杂度在O(n)。</p>
+<h2 id="单调栈的解题模板">单调栈的解题模板</h2>
+<pre tabindex="0"><code class="language-伪代码" data-lang="伪代码">stack&lt;int&gt; st; //根据需求，单调增或减
+//一般寻找下一个更大元素的时候从后往前遍历,且栈顶到栈底递增
+for (遍历数组) {
+	while (栈非空 &amp;&amp; 当前元素大于等于栈顶元素) {
+		弹出栈顶元素
+	}
+	if (栈非空) {
+		栈顶元素就是下一个更大的元素
+	}
+	当前元素进栈
+}
+</code></pre><h2 id="单调栈的应用">单调栈的应用</h2>
+<p><a href="https://leetcode.cn/problems/daily-temperatures/description/">739. 每日温度 - 力扣（LeetCode）</a></p>
+<p>给定一个整数数组 temperatures ，表示每天的温度，返回一个数组 answer ，其中 answer[i] 是指对于第 i 天，下一个更高温度出现在几天后。如果气温在这之后都不会升高，请在该位置用 0 来代替。</p>
+<p>示例 1:</p>
+<p>输入: temperatures = [73,74,75,71,69,72,76,73]
+输出: [1,1,4,2,1,1,0,0]</p>
+<p>代码：</p>
+<pre tabindex="0"><code>vector&lt;int&gt; dailyTemperatures(vector&lt;int&gt;&amp; temperatures) {
+        //单调栈，栈顶到栈底递增
+        stack&lt;int&gt; st; //存放下标
+        int n = temperatures.size();
+        //存放答案，设置初值
+        vector&lt;int&gt; res(n, 0);
+        for (int i = n - 1; i &gt;= 0; --i) {
+        	//若当前温度大于等于栈顶元素，则弹出栈顶元素
+            while (!st.empty() &amp;&amp; temperatures[i] &gt;= temperatures[st.top()]) {
+                st.pop();
+            }
+            if (!st.empty()) {
+                res[i] = st.top() - i;
+            }
+            st.push(i);
+        }
+        return res;
+    }
+</code></pre><h2 id="单调栈题目">单调栈题目</h2>
+<p><a href="https://leetcode.cn/problems/next-greater-element-i/description/">496. 下一个更大元素 I - 力扣（LeetCode）</a></p>
+<p><a href="https://leetcode.cn/problems/next-greater-element-ii/description/">503. 下一个更大元素 II - 力扣（LeetCode）</a></p>
+<p><a href="https://leetcode.cn/problems/daily-temperatures/">739. 每日温度 - 力扣（LeetCode）</a></p>
+<p><a href="https://leetcode.cn/problems/trapping-rain-water/submissions/">42. 接雨水 - 力扣（LeetCode）</a></p>
 
-<div class="author">
-    
-    
-    <img class="author-avatar" src="/avatar_hub4148438a4c389dcc4fac31f0ff07c64_718587_100x100_fill_q75_h2_box_smart1.webp" alt="maoqiang lin" width="1706"
-        height="1280" />
-    
-    <h2 class="author-name">maoqiang&#39;s blog</h2>
-    <p class="author-bio">欢迎来到我的个人博客！本人24届毕业生，美团后端开发实习er，后端开发求职ing，求offer滚滚来！</p>
+            </div>
+        </article></main>
 </div>
-
-        <main aria-label="Content">
-            <h3 class="posts-item-note" aria-label="Recent Posts">Recent Posts</h3>
-            
-            
-            
-            
-            <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%8D%95%E8%B0%83%E6%A0%88/">数据结构和算法-单调栈</a>
-    </h4>
-    
-    
-    
-    <time class="post-item-meta" datetime="2023-10-03T00:00:00Z">
-        3 Oct 2023
-        
-    </time>
-</article>
-
-            
-            <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E5%92%8C%E7%AE%97%E6%B3%95-%E5%89%8D%E7%BC%80%E6%A0%91/">数据结构和算法-前缀树</a>
-    </h4>
-    
-    
-    
-    <time class="post-item-meta" datetime="2023-10-02T00:00:00Z">
-        2 Oct 2023
-        
-    </time>
-</article>
-
-            
-            <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/hugo%E5%BF%AB%E9%80%9F%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99/">hugo快速搭建个人网站</a>
-    </h4>
-    
-    
-    
-    <time class="post-item-meta" datetime="2023-10-01T00:00:00Z">
-        1 Oct 2023
-        
-    </time>
-</article>
-
-            
-            <article class="post-item">
-    <h4 class="post-item-title">
-        <a href="/posts/markdown-syntax/">Markdown Syntax Guide</a>
-    </h4>
-    
-    
-    
-    <time class="post-item-meta" datetime="2023-09-30T00:00:00Z">
-        30 Sep 2023
-        
-    </time>
-</article>
-
-            
-            
-        </main>
-    </div><footer class="footer">
+<footer class="footer">
     <span class="footer_item"> </span>
     &nbsp;
 
@@ -298,5 +297,4 @@ stroke-linejoin="round" class="feather feather-home">
     
 
 </body>
-
 </html>
